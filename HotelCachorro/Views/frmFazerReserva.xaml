@@ -1,0 +1,49 @@
+﻿<Window x:Class="HotelCachorro.Views.frmFazerReserva"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelCachorro.Views"
+        mc:Ignorable="d"
+        Title="frmFazerReserva" Height="707.782" Width="658.714" Loaded="CarregarDados">
+    <Grid Margin="0,0,-8,-96">
+
+        <Label Content="Cliente" HorizontalAlignment="Left" Margin="25,32,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="TxtCpf" HorizontalAlignment="Left" Height="24" Margin="25,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122" Grid.ColumnSpan="2" TabIndex="1"/>
+        <Label Content="Pet" HorizontalAlignment="Left" Margin="25,103,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="cboPets" HorizontalAlignment="Left" Margin="25,129,0,0" VerticalAlignment="Top" Width="120" Height="25" Grid.ColumnSpan="2" TabIndex="4"/>
+
+        <Label Content="Quarto" HorizontalAlignment="Left" Margin="182,103,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.205,-0.397"/>
+        <ComboBox x:Name="cboQuartos" HorizontalAlignment="Left" Margin="180,134,0,0" VerticalAlignment="Top" Width="120" Height="25" RenderTransformOrigin="0.333,0.436" TabIndex="5"/>
+        <Label Content="Serviço" HorizontalAlignment="Left" Margin="27,246,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="cboServicos" HorizontalAlignment="Left" Margin="25,275,0,0" VerticalAlignment="Top" Width="122" Height="23" Grid.ColumnSpan="2" TabIndex="9"/>
+        <TextBox x:Name="TxtQtdServico" HorizontalAlignment="Left" Height="23" Margin="164,275,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" RenderTransformOrigin="0.469,2.714" TabIndex="10"/>
+        <Button x:Name="btnAddServico" Content="Adicionar" HorizontalAlignment="Left" Margin="322,275,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.875,0.347" Height="23" Click="AddServico" TabIndex="11"/>
+        <Label Content="Produto" HorizontalAlignment="Left" Margin="27,323,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="TxTQuantidadeProduto" HorizontalAlignment="Left" Height="22" Margin="166,349,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="134" TabIndex="13"/>
+        <ComboBox x:Name="cboProdutos" HorizontalAlignment="Left" Margin="25,349,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.674,0.516" Grid.ColumnSpan="2" Height="25" TabIndex="12"/>
+        <Button x:Name="btnAddProduto" Content="Adiconar" HorizontalAlignment="Left" Margin="322,349,0,0" VerticalAlignment="Top" Width="76" Height="22" Click="AddProduto" RenderTransformOrigin="1.009,0.515" TabIndex="14"/>
+        <Label Content="Data entrada" HorizontalAlignment="Left" Margin="25,189,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Data saída" HorizontalAlignment="Left" Margin="164,189,0,0" VerticalAlignment="Top"/>
+        <Button Content="Buscar Pet" HorizontalAlignment="Left" Margin="164,62,0,0" VerticalAlignment="Top" Width="75" Click="BuscarPet" TabIndex="2"/>
+        <DataGrid x:Name="dgReserva" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="136" Margin="27,405,0,0" VerticalAlignment="Top" Width="478" Grid.ColumnSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Nome}" Header="Nome" Width="100"/>
+                <DataGridTextColumn Binding="{Binding Categoria}" Header="Categoria" Width="100"/>
+                <DataGridTextColumn Binding="{Binding Quantidade}"  Header="Quantidade" Width="100"/>
+                <DataGridTextColumn Binding="{Binding Preco}"  Header="Preço" Width="80"/>
+                <DataGridTextColumn Binding="{Binding Subtotal}"  Header="Subtotal" Width="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label x:Name="labelPreco" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="125,348,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.079,0.077"/>
+        <Label Content="Quantidade" HorizontalAlignment="Left" Margin="166,318,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnReserva" Content="Reserva" Grid.Column="1" HorizontalAlignment="Left" Margin="335,567,0,0" VerticalAlignment="Top" Width="116" Height="60" Click="FazerReserva" TabIndex="15"/>
+        <DatePicker x:Name="DtpDataEntrada" HorizontalAlignment="Left" Margin="27,220,0,0" VerticalAlignment="Top" Width="120" TabIndex="7"/>
+        <DatePicker x:Name="DtpDataSaida" HorizontalAlignment="Left" Margin="166,220,0,0" VerticalAlignment="Top" Width="134" TabIndex="8"/>
+        <Button x:Name="btnMostrarReservas" Content="ExibirReservas" HorizontalAlignment="Left" Margin="322,67,0,0" VerticalAlignment="Top" Width="86" Click="MostrarReservas" TabIndex="3"/>
+        <Label x:Name="labelTotal" Content="Total: " HorizontalAlignment="Left" Margin="25,562,0,0" VerticalAlignment="Top" Height="29" Width="144" Grid.ColumnSpan="2" FontSize="16" FontWeight="Black"/>
+        <Label x:Name="labelPrecoQuarto" Content="Preço Quarto:" HorizontalAlignment="Left" Margin="27,596,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.667,2.115" Grid.ColumnSpan="2" FontSize="16" FontWeight="Black"/>
+        <Button x:Name="btnAddQuartoFatura" Content="AddQuarto" HorizontalAlignment="Left" Margin="322,139,0,0" VerticalAlignment="Top" Width="74" Click="ExibirPrecoQuarto" TabIndex="6"/>
+
+    </Grid>
+</Window>

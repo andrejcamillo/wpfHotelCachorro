@@ -1,0 +1,22 @@
+﻿<Window x:Class="HotelCachorro.Views.FrmCadastrarQuarto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelCachorro.Views"
+        mc:Ignorable="d"
+        Title="FrmCadastrarQuarto" Height="387.936" Width="304.727">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="223*"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Cadastrar quarto" HorizontalAlignment="Left" Margin="21,29,0,0" VerticalAlignment="Top" FontSize="28" FontWeight="Bold"/>
+        <Label Content="Nome quarto:" HorizontalAlignment="Left" Margin="90,106,0,0" VerticalAlignment="Top"/>
+        <Label Content="Preço diária:" HorizontalAlignment="Left" Margin="99,165,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNomeQuarto" HorizontalAlignment="Left" Height="23" Margin="74,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TabIndex="1"/>
+        <TextBox x:Name="txtPrecoDiaria" HorizontalAlignment="Left" Height="23" Margin="74,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TabIndex="2"/>
+        <Button x:Name="btnRegistrarQuarto" Content="Registrar" HorizontalAlignment="Left" Margin="49,34,0,0" VerticalAlignment="Top" Width="182" Height="56" Grid.Row="1" Click="SalvarQuarto" TabIndex="3"/>
+
+    </Grid>
+</Window>

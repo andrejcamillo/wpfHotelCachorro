@@ -1,0 +1,20 @@
+﻿<Window x:Class="HotelCachorro.Views.FrmListarProdutos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelCachorro.Views"
+        mc:Ignorable="d"
+        Title="FrmListarProdutos" Height="342.857" Width="615.966">
+    <Grid>
+
+        <DataGrid x:Name="dgaExibirProduto" AutoGenerateColumns="False" Height="161" Margin="57,86,342,0" VerticalAlignment="Top" Loaded="CarregarDados">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding IdProduto}" Header="ID" Width="30"/>
+                <DataGridTextColumn Binding="{Binding NomeProduto}" Header="Nome" Width="80"/>
+                <DataGridTextColumn Binding="{Binding PrecoProduto}" Header="Preco" Width="80"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Produtos" HorizontalAlignment="Left" Margin="57,30,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Black"/>
+    </Grid>
+</Window>

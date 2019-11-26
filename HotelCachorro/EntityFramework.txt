@@ -1,0 +1,55 @@
+﻿-- ANOTAÇÕES SOBRE O ENTITY FRAMEWORK  CODE FIRST--
+
+1 - Instalar o EF no projeto
+	- Install-Package EntityFramework (via promt ou tela)
+
+			- TELA
+			- botão direito em cima do nome do projeto
+			- manage NugeT package
+			- buscar por - EntityFramework
+			- instalar 
+
+			- CONSOLE
+			- canto superior direito barra de busca
+			- buscar por console, e escolher view ou tools
+			- digitar: Install-Package EntityFramework 
+
+2 - Criar as classes de modelo
+3 - Criar classe Context
+	- Represeta o EF
+	- Representa o BD
+	- Define as classes que vão virar tabelas no banco de dados
+
+###############  DIGITAR NO CONSOLE ###############
+
+4 - Habilitar as migrações 
+	- Enable-Migrations
+5 - Adicionar uma migração
+	- Add-Migration NomeMigracao ou  Add-Migration CriarBanco
+6 - Atualizar o banco de dados
+	- Update-Database -verbose
+7 - Desinstalar o EF no projeto
+	Unistall-Package EntityFramework 
+	
+
+--- VISUALIZAR BANCO --
+
+1 - View/SQL Server Object Explorer
+
+
+
+--- LOCALIZAR/COMO APAGAR BANCO E CRIRA ELE DNV ---
+	
+	- Pasta do usuário no computador
+		- SQL Server object Explorer
+		 - users
+			- databases
+				- botão direito em cima do banco e DELETAR
+
+				- Install-Package EntityFramework
+				- apagar imigracoes
+
+		//utilizar databinding
+		atributos iguais...
+		quando chegar no genero fazer
+		Genero.Nome do atributo

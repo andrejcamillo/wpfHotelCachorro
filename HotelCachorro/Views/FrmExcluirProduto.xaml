@@ -1,0 +1,14 @@
+﻿<Window x:Class="HotelCachorro.Views.FrmExcluirProduto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelCachorro.Views"
+        mc:Ignorable="d"
+        Title="FrmExcluirProduto" Height="213.025" Width="264.285">
+    <Grid>
+        <TextBox x:Name="TxtNome" HorizontalAlignment="Left" Height="30" Margin="25,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" TabIndex="1"/>
+        <Button x:Name="btnExcluir" Content="EXCLUIR" HorizontalAlignment="Left" Margin="25,106,0,0" VerticalAlignment="Top" Width="183" Height="28" Click="ExcluirProduto" TabIndex="2" />
+        <Label x:Name="labelCpf" Content="Nome" HorizontalAlignment="Left" Margin="91,15,0,0" VerticalAlignment="Top" Height="43" Width="69" FontSize="20"/>
+    </Grid>
+</Window>

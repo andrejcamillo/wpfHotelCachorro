@@ -86,8 +86,9 @@
     <Compile Include="Model\Reserva.cs" />
     <Compile Include="Model\Servico.cs" />
     <Compile Include="Utils\Validacao.cs" />
-    <Compile Include="Views\Categorias\Create.xaml.cs" />
-    <Compile Include="Views\Categorias\Index.xaml.cs" />
+    <Compile Include="Views\Home\NewFolder1\teste.xaml.cs">
+      <DependentUpon>teste.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -100,6 +101,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\Home\NewFolder1\teste.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Cliente.cs" />
@@ -130,12 +135,6 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Views\Categorias\Create.cshtml">
-      <Generator>MSBuild:Compile</Generator>
-    </None>
-    <None Include="Views\Categorias\Index.cshtml">
-      <Generator>MSBuild:Compile</Generator>
     </None>
   </ItemGroup>
   <ItemGroup>

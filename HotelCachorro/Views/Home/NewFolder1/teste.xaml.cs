@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace HotelCachorro.Views.Categorias
+namespace HotelCachorro.Views.Home.NewFolder1
 {
     /// <summary>
-    /// Interaction logic for Create.xaml
+    /// Interaction logic for teste.xaml
     /// </summary>
-    public partial class Create : Page
+    public partial class teste : Page
     {
-        public Create()
+        public teste()
         {
             InitializeComponent();
         }

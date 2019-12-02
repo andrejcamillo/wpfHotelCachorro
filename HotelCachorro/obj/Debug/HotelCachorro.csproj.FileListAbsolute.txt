@@ -555,3 +555,10 @@ C:\Users\1817879\Documents\0710\reversezik\HotelCachorro\HotelCachorro\obj\Debug
 C:\Users\1817879\Documents\0710\reversezik\HotelCachorro\HotelCachorro\obj\Debug\HotelCachorro.pdb
 C:\Users\1817879\Documents\0710\reversezik\HotelCachorro\HotelCachorro\obj\Debug\HotelCachorro.Migrations.Migg.resources
 C:\Users\1817879\Documents\0710\reversezik\HotelCachorro\HotelCachorro\obj\Debug\HotelCachorro.Migrations.MigDoSucesso.resources
+C:\Users\Andre\Documents\ASP.NET\HotelCachorro\HotelCachorro\obj\Debug\HotelCachorro.csprojAssemblyReference.cache
+C:\Users\Andre\Documents\ASP.NET\HotelCachorro\HotelCachorro\obj\Debug\MainWindow.g.cs
+C:\Users\Andre\Documents\ASP.NET\HotelCachorro\HotelCachorro\obj\Debug\App.g.cs
+C:\Users\Andre\Documents\ASP.NET\HotelCachorro\HotelCachorro\obj\Debug\HotelCachorro_MarkupCompile.cache
+C:\Users\Andre\Documents\ASP.NET\HotelCachorro\HotelCachorro\obj\Debug\HotelCachorro_MarkupCompile.lref
+C:\Users\Andre\Documents\ASP.NET\HotelCachorro\HotelCachorro\obj\Debug\HotelCachorro.exe
+C:\Users\Andre\Documents\ASP.NET\HotelCachorro\HotelCachorro\obj\Debug\HotelCachorro.pdb

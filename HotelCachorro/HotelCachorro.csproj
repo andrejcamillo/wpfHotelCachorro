@@ -86,6 +86,8 @@
     <Compile Include="Model\Reserva.cs" />
     <Compile Include="Model\Servico.cs" />
     <Compile Include="Utils\Validacao.cs" />
+    <Compile Include="Views\Categorias\Create.xaml.cs" />
+    <Compile Include="Views\Categorias\Index.xaml.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -129,6 +131,12 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Views\Categorias\Create.cshtml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Views\Categorias\Index.cshtml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -136,9 +144,7 @@
   <ItemGroup>
     <Resource Include="EntityFramework.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
